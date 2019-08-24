@@ -10,7 +10,7 @@ namespace BookShelfApp.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<Author> Author { get; set; }
         public DbSet<Book> Book { get; set; }
     }
